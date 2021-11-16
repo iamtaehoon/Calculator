@@ -5,11 +5,6 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
         Calculater c = new Calculater();
         c.pressPowerBtn(); //전원 킴.
-//        c.inputFormula("11+3/23*421-6+(32*4)");
-
-
-//        System.out.println("23*4".contains("\\+|-|\\*|/|\\(|\\)"));
-//        System.out.println(!"234".matches("[+-]?\\d*(\\.\\d+)?"));
 
 
         System.out.println(c.inputFormula("11+3/23*421-6+(32*4)"));
@@ -27,7 +22,13 @@ public class Test {
         System.out.println(c.inputFormula("(((32*4)))"));
         System.out.println("-------------\n\n");
 
+        System.out.println(c.inputFormula("+4"));
+        System.out.println("-------------\n\n");
+
         c.pressPowerBtn(); //전원 끔 이 밑으로는 해도 안됨.
+
+        System.out.println(c.inputFormula("(((32*4)))"));
+        System.out.println("-------------\n\n");
 
 //        Scanner sc = new Scanner(System.in);
 //        formula = sc.nextLine();
